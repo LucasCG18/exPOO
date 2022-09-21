@@ -1,6 +1,15 @@
+/* *******************************************************************
+ * Colegio Técnico Antônio Teixeira Fernandes (Univap)
+ * Curso Técnico em Informática - Data de Entrega: 21/09/2022
+ * Autores do Projeto: Lucas Castelani Gouveia
+ * 
+ * Turma: 3H  Disciplina: POO II
+ * Avaliação parcial referente ao 4 - Bimestre
+ * Observação: programa em formulario
+ * 
+ * Form1.java
+ * ******************************************************************/
 import java.awt.*;
-
-
 public class Form1 extends Frame {
     private Panel p1;
     private Panel p2;
@@ -27,7 +36,7 @@ public class Form1 extends Frame {
             Caracteres caracteres = new Caracteres();
             Numero numero = new Numero();
             numero.setNumero(Integer.parseInt(txt.getText()));
-            Unidade num = new Unidade(caracteres, numero);
+            NumeroExtenso num = new NumeroExtenso(caracteres, numero);
             ManipularCaracteres manipularCaracteres = new ManipularCaracteres(caracteres);
             lbl.setText(caracteres.getnumero_extenso());
         }
